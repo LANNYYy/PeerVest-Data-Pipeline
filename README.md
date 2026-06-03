@@ -15,31 +15,7 @@ Raw LendingClub CSV Data
 → Risk-Adjusted Ranking  
 → Flask Web Application Deployment
 
-## Architecture
 
-LendingClub Historical CSV Files
-                │
-                ▼
-      Data Cleaning & Validation
-                │
-                ▼
-      Feature Engineering
-        (One-Hot Encoding)
-                │
-      ┌─────────┴─────────┐
-      ▼                   ▼
-Neural Network     Random Forest
-(Default Risk)   (Expected Return)
-      │                   │
-      └─────────┬─────────┘
-                ▼
-      Risk-Adjusted Ranking
-                │
-                ▼
-        Flask Web Application
-                │
-                ▼
-          AWS EC2 Deployment
 
 ## Tech Stack
 
