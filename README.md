@@ -36,6 +36,35 @@ Raw LendingClub CSV Data
 - Created risk-adjusted recommendation logic
 - Deployed the solution as a Flask web application on AWS EC2
 
+
+## Architecture
+
+LendingClub Historical CSV Files
+                │
+                ▼
+      Data Cleaning & Validation
+                │
+                ▼
+      Feature Engineering
+        (One-Hot Encoding)
+                │
+      ┌─────────┴─────────┐
+      ▼                   ▼
+Neural Network     Random Forest
+(Default Risk)   (Expected Return)
+      │                   │
+      └─────────┬─────────┘
+                ▼
+      Risk-Adjusted Ranking
+                │
+                ▼
+        Flask Web Application
+                │
+                ▼
+          AWS EC2 Deployment
+
+
+
 ## Project Report
 
 The full technical report is available in the `report/` folder.
