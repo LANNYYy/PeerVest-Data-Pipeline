@@ -15,7 +15,32 @@ Raw LendingClub CSV Data
 → Risk-Adjusted Ranking  
 → Flask Web Application Deployment
 
+## Architecture
 
+```mermaid
+flowchart LR
+
+A[Historical Loan Data]
+--> B[Data Ingestion]
+
+B --> C[Data Cleaning]
+
+C --> D[Feature Engineering]
+
+D --> E1[Neural Network<br/>Default Prediction]
+
+D --> E2[Random Forest<br/>Return Prediction]
+
+E1 --> F[Risk-Adjusted Ranking]
+
+E2 --> F
+
+F --> G[Flask API]
+
+G --> H[Web Interface]
+
+H --> I[AWS EC2]
+```
 
 ## Tech Stack
 
