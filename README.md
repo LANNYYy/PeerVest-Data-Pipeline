@@ -15,28 +15,6 @@ Raw LendingClub CSV Data
 → Risk-Adjusted Ranking  
 → Flask Web Application Deployment
 
-## Tech Stack
-
-- Python
-- Pandas
-- Scikit-learn
-- Keras
-- SQL concepts
-- Flask
-- AWS EC2
-- HTML/CSS
-
-## Key Features
-
-- Processed 1.7M+ historical loan records
-- Built data cleaning and transformation workflow
-- Applied feature engineering and one-hot encoding
-- Developed Neural Network model for default prediction
-- Developed Random Forest model for annualized return prediction
-- Created risk-adjusted recommendation logic
-- Deployed the solution as a Flask web application on AWS EC2
-
-
 ## Architecture
 
 LendingClub Historical CSV Files
@@ -62,6 +40,27 @@ Neural Network     Random Forest
                 │
                 ▼
           AWS EC2 Deployment
+
+## Tech Stack
+
+- Python
+- Pandas
+- Scikit-learn
+- Keras
+- SQL concepts
+- Flask
+- AWS EC2
+- HTML/CSS
+
+## Key Features
+
+- Processed 1.7M+ historical loan records
+- Built data cleaning and transformation workflow
+- Applied feature engineering and one-hot encoding
+- Developed Neural Network model for default prediction
+- Developed Random Forest model for annualized return prediction
+- Created risk-adjusted recommendation logic
+- Deployed the solution as a Flask web application on AWS EC2
 
 
 
